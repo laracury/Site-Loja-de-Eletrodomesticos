@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.Eletro</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="imagens/E. Eletro.png" alt="Logo da empresa">
+        <ion-icon id="burguer" name="menu" onclick="clickMenu()"></ion-icon>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Cupons</a></li>
+                <li><a href="#">Área de pagamento</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="template1">
+            <div id="fotosT1">
+                <img src="imagens/ar-condicionado.png" alt="">
+                <p><strong>AR CONDICIONADO</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+            <div id="fotosT1">
+                <img src="imagens/liquidificador.jpg" alt="">
+                <p><strong>LIQUIDIFICADOR</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+            <div id="fotosT1">
+                <img src="imagens/geladeira.jpg" alt="">
+                <p><strong>GELADEIRA</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="template2">
+            <div id="fotosT2">
+                <img src="imagens/fogao.jpg" alt="">
+                <p><strong>FOGÃO</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+            <div id="fotosT2">
+                <img src="imagens/maquina-de-lavar-roupa.jpg" alt="">
+                <p><strong>MÁQUINA DE LAVAR ROUPAS</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+            <div id="fotosT2">
+                <img src="imagens/microondas.jpg" alt="">
+                <p><strong>MICROONDAS</strong></p>
+                <p>R$989,90 (à vista) ou </p>
+                <p>R$119,90 a prazo no cartão</p>
+                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="seeMore">
+            <button class="btn"><a href="#">See More...</a></button>
+        </div>
+    </main>
+</body>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
