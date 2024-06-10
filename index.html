@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header> <!--logo e o menu hamburguer-->
         <img id="logo" src="imagens/E. Eletro.png" alt="Logo da empresa">
         <ion-icon id="burguer" name="menu" onclick="clickMenu()"></ion-icon>
         <menu id="itens">
             <ul>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Cupons</a></li>
-                <li><a href="#">Área de pagamento</a></li>
-                <li><a href="#">Favoritos</a></li>
+                <li id="lista1"><a href="#">Categorias</a></li>
+                <li id="lista1"><a href="#">Cupons</a></li>
+                <li id="lista1"><a href="#">Área de pagamento</a></li>
+                <li id="lista1"><a href="#">Favoritos</a></li>
             </ul>
         </menu>
     </header>
@@ -24,55 +24,78 @@
         <div class="template1">
             <div id="fotosT1">
                 <img src="imagens/ar-condicionado.png" alt="">
-                <p><strong>AR CONDICIONADO</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Ar condicionado</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
             <div id="fotosT1">
                 <img src="imagens/liquidificador.jpg" alt="">
-                <p><strong>LIQUIDIFICADOR</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Liquidificador</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
             <div id="fotosT1">
                 <img src="imagens/geladeira.jpg" alt="">
-                <p><strong>GELADEIRA</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Geladeira</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
         </div>
         <div class="template2">
             <div id="fotosT2">
                 <img src="imagens/fogao.jpg" alt="">
-                <p><strong>FOGÃO</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Fogão</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
             <div id="fotosT2">
                 <img src="imagens/maquina-de-lavar-roupa.jpg" alt="">
-                <p><strong>MÁQUINA DE LAVAR ROUPAS</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Máquina de Lavar Roupas</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
             <div id="fotosT2">
                 <img src="imagens/microondas.jpg" alt="">
-                <p><strong>MICROONDAS</strong></p>
-                <p>R$989,90 (à vista) ou </p>
-                <p>R$119,90 a prazo no cartão</p>
+                <h3>Microondas</h3>
+                <p>R$ 989,90 (à vista) ou </p>
+                <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
         </div>
         <div class="seeMore">
             <button class="btn"><a href="#">See More...</a></button>
         </div>
+        <div class="template3">
+            <div class="info">
+                <ul>
+                    <h3 style="padding-bottom: 8px;">Central de Atendimento</h3>
+                    <li><a href="#">Atendimento Chat</a></li>
+                    <li>Termo Compra e Venda</li>
+                    <li>Trocas e Devolução</li>
+                    <li>Assistência Técnica</li>
+                    <li>Política de Privacidade</li>
+                    <li>Trabalhe Conosco</li>
+                </ul>
+            </div>
+            <div class="info">
+                <img class="logo2" src="imagens/E. Eletro.png" alt="logo da empresa">
+            </div>
+            <div class="info">
+                <h3 style="padding-bottom: 8px;">Siga Nossas redes Sociais</h3>
+                <ion-icon id="sociais" name="logo-instagram"></ion-icon>
+                <ion-icon id="sociais" name="logo-twitter"></ion-icon>
+                <ion-icon id="sociais" name="logo-facebook"></ion-icon>
+                <ion-icon id="sociais" name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
     </main>
 </body>
-    <script>
+    <script> // Ao clicar no ícone de menu a lista aparece, clicando denovo ela desabilita
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'

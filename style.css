@@ -11,15 +11,23 @@
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: #F2E3B6;
+}
+h3{
+    color: #A69F3F;
+}
 header{
     width: 100%;
+    background-color: white;
+    border-radius: 20px;
 }
 header > #logo{
     width: 300px;
     height: 190px;
     border-radius: 20px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /*este comando centraliza*/
 }
 header > #burguer{
     color: rgb(0, 0, 0);
@@ -27,14 +35,14 @@ header > #burguer{
     height: 50px;
     display: block;
     margin: 0 auto;
-    cursor: pointer;
+    cursor: pointer; 
 }
 header > menu{
     display: none;
     text-align: center;
     padding: 10px;
 } 
-li{
+#lista1{
     text-align: center;
     margin: auto;
     width: 90%;
@@ -43,8 +51,8 @@ li{
     border: 1px solid black;
     list-style-type: none;
 }
-li:hover{
-    background-color: rgb(240, 230, 92);
+#lista1:hover{
+    background-color: #F2E3B6;
     font-size: 22px;
     transition: 0.7s;
     cursor: pointer;
@@ -60,7 +68,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
 }
 #fotosT1{
     padding-left: 60px;
@@ -70,7 +81,7 @@ main{
     height: 200px;
 }
 #carrinho{
-    color: rgb(61, 61, 61);
+    color: #A69F3F;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -79,6 +90,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
 }
 #fotosT2{
     padding-left: 60px;
@@ -96,9 +110,30 @@ main{
 .seeMore > .btn{
     width: 120px;
     height: 30px;
-    background-color: #fff5be;
+    background-color: white;
     font-size: 18px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+.template3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
+}
+.info{
+    padding-left: 60px;
+}
+.logo2{
+    width: 180px;
+    border-radius: 700px;
+    border: 4px solid #A69F3F;
+}
+#sociais{
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
