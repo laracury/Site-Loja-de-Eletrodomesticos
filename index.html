@@ -8,35 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> <!--logo e o menu hamburguer-->
-        <img id="logo" src="imagens/E. Eletro.png" alt="Logo da empresa">
-        <ion-icon id="burguer" name="menu" onclick="clickMenu()"></ion-icon>
-        <menu id="itens">
-            <ul>
-                <li id="lista1"><a href="#">Categorias</a></li>
-                <li id="lista1"><a href="#">Cupons</a></li>
-                <li id="lista1"><a href="#">Área de pagamento</a></li>
-                <li id="lista1"><a href="#">Favoritos</a></li>
-            </ul>
-        </menu>
+    <header>
+        <div class="topo">
+            <a href="#"><img id="logo" src="imagens/E. Eletro.png" alt="Logo da Empresa"></a>
+            <div class="pesquisa-favorito">
+                <input id="busca" type="search">
+                <a href="#"><ion-icon id="icone" name="heart-outline"></ion-icon></a>
+                <a href="#"><ion-icon id="icone" name="cart-outline"></ion-icon></a>
+            </div> 
+        </div>
+        <div class="menu">
+            <a href="#"><ion-icon onclick="clickMenu()" id="icone-menu" name="menu-outline"></ion-icon></a>
+            <a id="menu-list" href="#">Categorias</a>
+            <a id="menu-list" href="#">Favoritos</a>
+            <a id="menu-list" href="#">Sobre nós</a>
+            <a id="menu-list" href="#">Serviços</a>
+        </div>
     </header>
     <main>
         <div class="template1">
-            <div id="fotosT1">
+            <div class="fotosT1">
                 <img src="imagens/ar-condicionado.png" alt="imagem de ar condicionado">
                 <h3>Ar condicionado</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
-            <div id="fotosT1">
+            <div class="fotosT1">
                 <img src="imagens/liquidificador.jpg" alt="imagem de liquidificador">
                 <h3>Liquidificador</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
-            <div id="fotosT1">
+            <div class="fotosT1">
                 <img src="imagens/geladeira.jpg" alt="imagemd de geladeira">
                 <h3>Geladeira</h3>
                 <p>R$ 989,90 (à vista) ou </p>
@@ -45,21 +50,21 @@
             </div>
         </div>
         <div class="template2">
-            <div id="fotosT2">
+            <div class="fotosT2">
                 <img src="imagens/fogao.jpg" alt="imagem de fogão">
                 <h3>Fogão</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
-            <div id="fotosT2">
+            <div class="fotosT2">
                 <img src="imagens/maquina-de-lavar-roupa.jpg" alt="imagem de máquina de lavar roupas">
                 <h3>Máquina de Lavar Roupas</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
                 <ion-icon id="carrinho" name="cart-outline"></ion-icon>
             </div>
-            <div id="fotosT2">
+            <div class="fotosT2">
                 <img src="imagens/microondas.jpg" alt="imagem de microondas">
                 <h3>Microondas</h3>
                 <p>R$ 989,90 (à vista) ou </p>

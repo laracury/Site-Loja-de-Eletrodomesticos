@@ -3,72 +3,81 @@
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    background-color: #000000;
-}
-h3{
-    color: #A69F3F;
-}
 header{
-    width: 100%;
+    height: 400px;
+}
+body{
+    background-image: linear-gradient(to right, rgb(252, 252, 191),rgb(235, 235, 140));
+}
+.topo{
     background-color: white;
-    border-radius: 20px;
-}
-header > #logo{
-    width: 300px;
-    height: 190px;
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto; /*este comando centraliza*/
-}
-header > #burguer{
-    color: rgb(0, 0, 0);
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer; 
-}
-header > menu{
-    display: none;
-    text-align: center;
-    padding: 10px;
-} 
-#lista1{
-    text-align: center;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    width: 90%;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid black;
-    list-style-type: none;
 }
-#lista1:hover{
-    background-color: #F2E3B6;
-    font-size: 22px;
-    transition: 0.7s;
-    cursor: pointer;
+.topo #logo{
+    width: 280px;
+    height: 150px;
 }
-a{
+.pesquisa-favorito{
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#busca{
+    box-shadow: 2px 2px rgb(214, 214, 214);
+    margin-right: 8%;
+}
+#icone{
+    color: black;
+    padding-left: 3%;
+    width: 30px;
+    height: 30px;
+    padding-right: 8px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+#icone-menu{
+    color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 5px;
+}
+.menu #menu-list{
+    padding-right: 10px;
     color: black;
     text-decoration: none;
+    text-shadow: 2px 2px rgb(233, 233, 232);
+}
+.menu #menu-list:hover{
+    font-size: 20px;
 }
 main{
-    padding: 5%;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    display: grid;
 }
 .template1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     border-radius: 20px;
 }
-#fotosT1{
+.fotosT1{
     padding-left: 60px;
     background-color: white;
     border-radius: 20px;
     } 
-#fotosT1 > img{
+.fotosT1 > img{
     width: 200px;
     height: 200px;
 }
@@ -84,12 +93,12 @@ main{
     justify-content: center;
     border-radius: 20px;
 }
-#fotosT2{
+.fotosT2{
     padding-left: 60px;
     background-color: white;
     border-radius: 20px;
 } 
-#fotosT2 > img{
+.fotosT2 > img{
     width: 200px;
     height: 200px;
 }
