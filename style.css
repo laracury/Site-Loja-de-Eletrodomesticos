@@ -1,68 +1,87 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    height: 400px;
-}
-body{
-    background-image: linear-gradient(to right, rgb(252, 252, 191),rgb(235, 235, 140));
-}
-.topo{
-    background-color: white;
-    height: 130px;
+.inicio{ /* cabeçalho, barra */
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    padding: .5rem 9%;
+    z-index: 1000;
+    background: #e7e5c5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-.topo #logo{
-    width: 280px;
+.inicio .logo{
+    width: 150px;
     height: 150px;
 }
-.pesquisa-favorito{
-    padding-left: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.inicio .logo img{
+    width: 100%;
 }
-#busca{
-    box-shadow: 2px 2px rgb(214, 214, 214);
-    margin-right: 8%;
+.search-bar {
+    flex: 1;
+    text-align: center;
 }
-#icone{
+.search-form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.search-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.inicio .menu-site a{
     color: black;
-    padding-left: 3%;
-    width: 30px;
-    height: 30px;
-    padding-right: 8px;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
-#icone-menu{
-    color: black;
-    width: 30px;
-    height: 30px;
-    padding-left: 8px;
-    padding-right: 5px;
-}
-.menu #menu-list{
-    padding-right: 10px;
-    color: black;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    font-weight: 600;
     text-decoration: none;
-    text-shadow: 2px 2px rgb(233, 233, 232);
 }
-.menu #menu-list:hover{
-    font-size: 20px;
+.inicio .menu-site a:hover{
+    color: #FFA500 ;
+}
+.inicio .icons div{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+.inicio .icons div:hover{
+    color: yellow;
+}
+#menu{
+    display: none;
+    color: black;
+}
+#menu:hover{
+    color: #A69F3F;
+
 }
 main{
     background-color: white;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 12rem;
     display: grid;
 }
 .template1{
@@ -81,7 +100,7 @@ main{
     width: 200px;
     height: 200px;
 }
-#carrinho{
+#icone-main{
     color: #A69F3F;
     width: 30px;
     height: 30px;
@@ -133,36 +152,37 @@ main{
     border-radius: 50%;
     border: 4px solid #A69F3F;
 }
+#list{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
 #sociais{
     width: 25px;
     height: 25px;
     cursor: pointer;
 }
 
-@media (max-width:750px){
-    main{
-        margin: auto;
-        background-color: #f3f3f3;
+@media(max-width:768px){
+    .inicio .icons #menu{
+        display: inline-block;
     }
-    .template1{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 50%;
-        margin: auto;
+    .inicio .menu-site{
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 30rem;
+        background-color: yellow;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     }
-    #fotosT1{
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.199) ;
-        margin-top: 30px;
-
+    .inicio .menu-site.active{
+        right: 2rem;
+        transition: .4s linear;
     }
-    .template2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 50%;
-        margin: auto;
-    }
-    #fotosT2{
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.199) ;
-        margin-top: 30px;
+    .inicio .menu-site a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
     }
 }

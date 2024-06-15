@@ -6,24 +6,38 @@
     <title>E.Eletro</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!--INICIO CSS ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="topo">
-            <a href="#"><img id="logo" src="imagens/E. Eletro.png" alt="Logo da Empresa"></a>
-            <div class="pesquisa-favorito">
-                <input id="busca" type="search">
-                <a href="#"><ion-icon id="icone" name="heart-outline"></ion-icon></a>
-                <a href="#"><ion-icon id="icone" name="cart-outline"></ion-icon></a>
-            </div> 
+    <header class="inicio">
+        <div class="logo">
+            <img src="imagens/logo eletro.png" alt="Logo da Empresa">
         </div>
-        <div class="menu">
-            <a href="#"><ion-icon onclick="clickMenu()" id="icone-menu" name="menu-outline"></ion-icon></a>
-            <a id="menu-list" href="#">Categorias</a>
-            <a id="menu-list" href="#">Favoritos</a>
-            <a id="menu-list" href="#">Sobre nós</a>
-            <a id="menu-list" href="#">Serviços</a>
+        <div class="search-bar">
+            <form class="search-form" onsubmit="searchProducts(event)">
+                <input type="search" id="search-input" placeholder="Buscar produtos, marcas e muito mais...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
         </div>
+        <!-- INICIO DO MENU-->
+        <nav class="menu-site">
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="serviço.html">Serviços</a>
+            <a href="blog.html">Blog</a>
+            <a href="contatos.html">Fale Conosco</a>
+
+        </nav>
+        <!-- FIM DO MENU DO SITE -->
+
+        <!-- INICIO DOS ICONIS -->
+        <div class="icons">
+
+            <div id="menu"class="fas fa-bars"></div>
+        </div>
+
+        <!-- FIM DOS ICONIS -->
     </header>
     <main>
         <div class="template1">
@@ -32,21 +46,24 @@
                 <h3>Ar condicionado</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
             <div class="fotosT1">
                 <img src="imagens/liquidificador.jpg" alt="imagem de liquidificador">
                 <h3>Liquidificador</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
             <div class="fotosT1">
                 <img src="imagens/geladeira.jpg" alt="imagemd de geladeira">
                 <h3>Geladeira</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
         </div>
         <div class="template2">
@@ -55,21 +72,24 @@
                 <h3>Fogão</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
             <div class="fotosT2">
                 <img src="imagens/maquina-de-lavar-roupa.jpg" alt="imagem de máquina de lavar roupas">
                 <h3>Máquina de Lavar Roupas</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
             <div class="fotosT2">
                 <img src="imagens/microondas.jpg" alt="imagem de microondas">
                 <h3>Microondas</h3>
                 <p>R$ 989,90 (à vista) ou </p>
                 <p>R$ 119,90 a prazo no cartão</p>
-                <ion-icon id="carrinho" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                <ion-icon id="icone-main" name="heart-outline"></ion-icon>
             </div>
         </div>
         <div class="seeMore">
@@ -79,16 +99,16 @@
             <div class="info">
                 <ul>
                     <h3 style="padding-bottom: 8px;">Central de Atendimento</h3>
-                    <li><a href="#">Atendimento Chat</a></li>
-                    <li>Termo Compra e Venda</li>
-                    <li>Trocas e Devolução</li>
-                    <li>Assistência Técnica</li>
-                    <li>Política de Privacidade</li>
-                    <li>Trabalhe Conosco</li>
+                    <li><a id="list" href="#">Atendimento Chat</a></li>
+                    <li><a id="list" href="#">Termo Compra e Venda</a></li>
+                    <li><a id="list" href="#">Trocas e Devolução</a></li>
+                    <li><a id="list" href="#">Assistência Técnica</a></li>
+                    <li><a id="list" href="#">Política de Privacidade</a></li>
+                    <li><a id="list" href="#">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <div class="info">
-                <img class="logo2" src="imagens/E. Eletro.png" alt="logo da empresa">
+                <img class="logo2" src="imagens/logo eletro.png" alt="logo da empresa">
             </div>
             <div class="info">
                 <h3 style="padding-bottom: 8px;">Siga Nossas redes Sociais</h3>
@@ -100,15 +120,7 @@
         </div>
     </main>
 </body>
-    <script> // Ao clicar no ícone de menu a lista aparece, clicando denovo ela desabilita
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }else{
-                itens.style.display='block'
-            }
-        }
-    </script>
+<script src="lo.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
