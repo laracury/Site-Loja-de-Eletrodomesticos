@@ -23,6 +23,7 @@
 .inicio .logo img{
     width: 100%;
 }
+/*inicio estilização da barra de pesquisa*/
 .search-bar {
     flex: 1;
     text-align: center;
@@ -31,7 +32,7 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
 }
 .search-form input[type="search"] {
     width: 100%;
@@ -49,25 +50,26 @@
     outline: none;
     padding: 10px;
     cursor: pointer;
-}
+} 
+/*Final barra de pesquisa*/
 .inicio .menu-site a{
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.0rem;
     margin: 0 1rem;
     font-weight: 600;
     text-decoration: none;
 }
 .inicio .menu-site a:hover{
-    color: #FFA500 ;
+    color: #A69F3F ;
 }
 .inicio .icons div{
     color: #fff;
     font-size: 2.5rem;
-    margin-left: 1.7rem;
+    margin-left: 1.5rem;
     cursor: pointer;
 }
 .inicio .icons div:hover{
-    color: yellow;
+    color: #A69F3F;
 }
 #menu{
     display: none;
@@ -91,14 +93,21 @@ main{
     margin-bottom: 3%;
     border-radius: 20px;
 }
-.fotosT1{
+.fotos{
     padding-left: 60px;
     background-color: white;
     border-radius: 20px;
     } 
-.fotosT1 > img{
+.fotos > .img{
     width: 200px;
-    height: 200px;
+    height: 150px;
+}
+.fotos > .img > #produto{
+    width: 100%;
+}
+.descricao{
+    width: 200px;
+    padding-top: 5%;
 }
 #icone-main{
     color: #A69F3F;
@@ -111,15 +120,6 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-}
-.fotosT2{
-    padding-left: 60px;
-    background-color: white;
-    border-radius: 20px;
-} 
-.fotosT2 > img{
-    width: 200px;
-    height: 200px;
 }
 .seeMore{
     display: flex;
@@ -172,7 +172,7 @@ main{
         top: 110%;
         right: 110%;
         width: 30rem;
-        background-color: yellow;
+        background-color: #e7e5c5;
         border-radius: .5rem;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     }
@@ -182,7 +182,7 @@ main{
     }
     .inicio .menu-site a{
         display: block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 2rem 2.5rem;
     }
 }
