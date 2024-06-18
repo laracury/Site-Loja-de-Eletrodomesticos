@@ -85,18 +85,18 @@ main{
     height: 100%;
     margin-top: 12rem;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-.template1{
+.template{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4%;
     padding-top: 2%;
 }
 .fotos{
-    display: grid;
-    width: 25%;
+    display: block;
+    width: 50%;
     align-items: center;
     justify-content: center;
 } 
@@ -108,19 +108,13 @@ main{
     width: 100%;
 }
 .fotos > .descricao{
-    width: 200px;
+    width: 100%;
 }
 #icone-main{
     color: #A69F3F;
     width: 30px;
     height: 30px;
     cursor: pointer;
-}
-.template2{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .seeMore{
     display: flex;
@@ -165,6 +159,13 @@ main{
 }
 
 @media(max-width:768px){
+    .inicio .logo{
+        width: 90px;
+        height: 90px;
+    }
+    .search-form{
+        max-width: 150px;
+    }
     .inicio .icons #menu{
         display: inline-block;
     }
@@ -172,7 +173,7 @@ main{
         position: absolute;
         top: 110%;
         right: 110%;
-        width: 30rem;
+        width: 15rem;
         background-color: #e7e5c5;
         border-radius: .5rem;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -183,7 +184,15 @@ main{
     }
     .inicio .menu-site a{
         display: block;
-        font-size: 1.5rem;
-        margin: 2rem 2.5rem;
+        font-size: 1rem;
+        margin: 1.5rem 2rem;
+    }
+    #menu{
+        width: 30px;
+    }
+    .template{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }
