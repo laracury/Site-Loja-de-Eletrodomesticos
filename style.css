@@ -87,17 +87,19 @@ main{
     display: grid;
 }
 .template1{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3%;
-    border-radius: 20px;
+    margin-bottom: 4%;
+    padding-top: 2%;
 }
 .fotos{
-    padding-left: 60px;
-    background-color: white;
-    border-radius: 20px;
-    } 
+    display: grid;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+} 
 .fotos > .img{
     width: 200px;
     height: 150px;
@@ -105,9 +107,8 @@ main{
 .fotos > .img > #produto{
     width: 100%;
 }
-.descricao{
+.fotos > .descricao{
     width: 200px;
-    padding-top: 5%;
 }
 #icone-main{
     color: #A69F3F;
@@ -116,10 +117,10 @@ main{
     cursor: pointer;
 }
 .template2{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
 }
 .seeMore{
     display: flex;
