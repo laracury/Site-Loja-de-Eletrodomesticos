@@ -191,11 +191,12 @@ main{
 }
 .rodape-div{
     display: flex;
-    flex-wrap: wrap; /*quebra em multiplas linhas de cima para baixo*/
+    height: 100%;
     width:100%;
     margin: auto;
     align-items: stretch; /*Estica os ítens para preencher o container*/
-    padding: 60px 10px 40px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
     display: flex;
@@ -207,10 +208,9 @@ main{
     color: white;
 }
 .rodape-direitos{
-    width: calc(100% - 20px);
+    width: 100%;
     background-color: black;
-    padding: 10px;
-    margin: 0px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -263,6 +263,9 @@ main{
     .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
         width: calc(50% - 20px);
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        
     }
     .rodape-div{
         padding: 60px 0px 40px 0px;
