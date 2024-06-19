@@ -52,6 +52,8 @@
     cursor: pointer;
 } 
 /*Final barra de pesquisa*/
+
+/*Inicio do menu*/
 .inicio .menu-site a{
     color: black;
     font-size: 1.0rem;
@@ -79,88 +81,65 @@
     color: #A69F3F;
 
 }
+/*Final do menu*/
+
 main{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 12rem;
-    padding: 10px;
-}
-.template{
-    gap: 2.5rem;
+    background-color: rgb(252, 252, 252);
+    margin-top: 190px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    padding-top: 2%;
-    border: 1px solid black;
 }
-.fotos{
+.conteudo{
     display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    padding: 20px;
     width: 350px;
+    height: 400px;
+
+}
+.conteudo .produtos{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.conteudo .produtos .image{
+    width: 300px;
     height: 150px;
-} 
-.fotos > .img{
+    margin: auto;
+}
+.conteudo .produtos .image .product-image{
     width: 100%;
     height: 100%;
+    object-fit: contain; /*para imagem caber no espaço definido*/
 }
-.fotos > .img > #produto{
-    width: 100%;
+.conteudo .produtos .title{
+    font-size: 22px;
+    text-align: center;
 }
-.fotos > .descricao{
-    width: 100%;
+.conteudo .produtos .details{
+    text-align: center;
+}
+.conteudo .produtos .details p{
+    font-size: 25px;
+    margin: 15px;
+}
+.conteudo .produtos .details p span{
+    color: green;
+}
+.conteudo .produtos .details a{
+    text-decoration: none;
+    background: rgb(126, 125, 125);
+    border-radius: 8px;
+    color: white;
+    padding: 8px 45px;
+    margin: 15px;
 }
 #icone-main{
-    color: #A69F3F;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+    color: white;
+    padding-right: 4px;
 }
-.seeMore{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2%;
-}
-.seeMore > .btn{
-    width: 120px;
-    height: 30px;
-    background-color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.template3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 20px;
-    height: 400px;
-}
-.info{
-    width: 33.33%;
-}
-.logo2{
-    width: 180px;
-    border-radius: 50%;
-    border: 4px solid #A69F3F;
-}
-#list{
-    text-decoration: none;
-    color: black;
-    font-size: 18 px;
-}
-#sociais{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
+
+
 
 @media(max-width:768px){
     .inicio .logo{
@@ -193,10 +172,5 @@ main{
     }
     #menu{
         width: 30px;
-    }
-    .template{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
     }
 }
